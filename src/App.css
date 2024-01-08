@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color:#0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif; /* Add your preferred font-family */
+}
+
+.App {
+  /* Add styles specific to your App component if needed */
+}
+
+/* Additional styling for Navbar or other components */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
