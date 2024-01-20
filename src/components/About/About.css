@@ -1,0 +1,12 @@
+.line {
+    position: absolute;
+    border-left: 2px solid #000; /* Set the color and width of the line */
+    height: 100%; /* Make the line cover the entire height of the container */
+    top: 0; /* Position the line at the top of the container */
+    left: 50%; /* Position the line in the middle horizontally */
+    transform: translateX(-50%); /* Center the line horizontally */
+  }
+
+  .flex-container {
+    position: relative; /* Set the position of the container to relative */
+  }
