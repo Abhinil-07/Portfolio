@@ -1,22 +1,27 @@
-import './App.css';
-import { About } from './components/About/About';
-import { StackCard } from './components/About/StackCard';
-import Timeline from './components/About/Timeline';
-import Hero from './components/Hero';
-import Nav from './components/Nav';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+// import { About } from "./components/About/About";
+import { StackCard } from "./components/About/StackCard";
+import Timeline from "./components/About/Timeline";
+
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className='lg:h-[150vh] h-[250vh]'>
-      <Nav />
-      <Hero />
-      <StackCard/>
-      {/* <Timeline/> */}
+    <div className="lg:h-[250vh] h-[250vh]">
+      {/* <Nav /> */}
 
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/stack" element={<StackCard />} />
+          <Route path="/timeline" element={<Timeline />} />
+        </Routes>
+      </BrowserRouter>
+
+      {/* <StackCard /> */}
     </div>
-
-
-
   );
 }
 
