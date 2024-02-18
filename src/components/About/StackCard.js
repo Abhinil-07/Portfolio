@@ -117,70 +117,77 @@ export const StackCard = () => {
         <span className="text-[40px] font-bold lg:ml-[350px] ml-[120px] 375px:ml-[135px]">
           Stack
         </span>
-        <span className="mt-4 text-[25px] text-gray-400 lg:ml-[350px] 375px:ml-[65px] ml-[43px]">
+        <span className="mt-4 text-[25px] text-gray-400 lg:ml-[350px] 375px:ml-[25px] ml-[43px]">
           Frontend
         </span>
       </div>
-      <div className="mt-8 grid lg:grid-cols-3 grid-cols-1 lg:gap-9 gap-7 lg:w-[55%] lg:mx-auto 375px:ml-[60px] ml-[38px]">
+      <div className="mt-8 grid lg:grid-cols-3 grid-cols-2 lg:gap-9 gap-7 375px:gap-x-1 375px:gap-y-5 lg:w-[55%] lg:mx-auto 375px:ml-[20px] ml-[38px]">
         {Frontend.map((item) => (
           <div
             key={item.id}
-            className="flex rounded-lg border-t border-r border-gray-500 w-[250px] 375px:w-[280px] h-[64px] bg-[#1b1b1e]
+            className="flex rounded-lg border-t border-r border-gray-500 lg:w-[250px] 375px:w-[170px] h-[64px] bg-[#1b1b1e]
               cursor-pointer"
           >
             <div
-              className="m-4 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"
+              className="ml-2 mr-1 mt-2 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"
               style={{ backgroundImage: `url('${item.image}')` }}
             ></div>
             <div className="m-1 flex-col items-center justify-center">
-              <p className="font-medium text-lg">{item.title}</p>
-              <p className="text-gray-400">{item.description}</p>
+              <p className="lg:font-medium lg:text-lg text-sm">{item.title}</p>
+              <p className="text-gray-400 lg:text-sm text-xs">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
       <div className="flex flex-col">
-        <span className="mt-8 text-[25px] text-gray-400 lg:ml-[350px] 375px:ml-[65px] ml-[43px]">
+        <span className="mt-8 text-[25px] text-gray-400 lg:ml-[350px] 375px:ml-[25px] ml-[43px]">
           Backend
         </span>
       </div>
-      <div className="mt-8 grid lg:grid-cols-3 grid-cols-1 lg:gap-9 gap-7 lg:w-[55%] lg:mx-auto 375px:ml-[60px] ml-[38px]">
+      <div className="mt-8 grid lg:grid-cols-3 grid-cols-2 lg:gap-9 gap-7 375px:gap-x-1 375px:gap-y-5 lg:w-[55%] lg:mx-auto 375px:ml-[20px] ml-[38px]">
         {Backend.map((item) => (
           <div
             key={item.id}
-            className="flex rounded-lg border-t border-r border-gray-500 w-[250px] 375px:w-[280px] h-[60px] bg-[#1b1b1e] cursor-pointer"
+            className="flex rounded-lg border-t border-r border-gray-500 lg:w-[250px] 375px:w-[170px] h-[64px] bg-[#1b1b1e]
+              cursor-pointer"
           >
             <div
-              className="m-4 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"
+              className="ml-2 mr-1 mt-2 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"
               style={{ backgroundImage: `url('${item.image}')` }}
             ></div>
             <div className="m-1 flex-col items-center justify-center">
-              <p className="font-medium text-lg">{item.title}</p>
-              <p className="text-gray-400">{item.description}</p>
+              <p className="lg:font-medium lg:text-lg text-sm">{item.title}</p>
+              <p className="text-gray-400 lg:text-sm text-xs">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}
       </div>
-
       <div className="flex flex-col">
-        <span className="mt-8 text-[25px] text-gray-400 lg:ml-[350px] 375px:ml-[65px] ml-[43px]">
+        <span className="mt-8 text-[25px] text-gray-400 lg:ml-[350px] 375px:ml-[25px] ml-[43px]">
           Database
         </span>
       </div>
-      <div className="mt-8 grid lg:grid-cols-3 grid-cols-1 lg:gap-9 gap-7 lg:w-[55%] lg:mx-auto 375px:ml-[60px] ml-[38px]">
+      <div className="mt-8 grid lg:grid-cols-3 grid-cols-2 lg:gap-9 gap-7 375px:gap-x-1 375px:gap-y-5 lg:w-[55%] lg:mx-auto 375px:ml-[20px] ml-[38px]">
         {Database.map((item) => (
           <div
             key={item.id}
-            className="flex rounded-lg border-t border-r border-gray-500 w-[250px]  375px:w-[280px] h-[60px] bg-[#1b1b1e] cursor-pointer"
+            className="flex rounded-lg border-t border-r border-gray-500 lg:w-[250px] 375px:w-[170px] h-[64px] bg-[#1b1b1e]
+              cursor-pointer"
           >
             <div
-              className="m-4 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"
+              className="ml-2 mr-1 mt-2 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"
               style={{ backgroundImage: `url('${item.image}')` }}
             ></div>
             <div className="m-1 flex-col items-center justify-center">
-              <p className="font-medium text-lg">{item.title}</p>
-              <p className="text-gray-400">{item.description}</p>
+              <p className="lg:font-medium lg:text-lg text-sm">{item.title}</p>
+              <p className="text-gray-400 lg:text-sm text-xs">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}

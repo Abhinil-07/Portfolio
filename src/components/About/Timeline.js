@@ -5,7 +5,7 @@ const Timeline = () => {
   return (
     <>
       <div className="flex flex-col ml-5 lg:ml-[350px] mt-8 ">
-        <span className="text-[40px] font-bold mt-[30px] mb-[60px]">
+        <span className="text-[40px] font-bold lg:ml-0 ml-[80px] mt-[30px] mb-[60px]">
           Education
         </span>
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
