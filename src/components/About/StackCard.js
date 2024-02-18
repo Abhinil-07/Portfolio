@@ -113,7 +113,7 @@ export const StackCard = () => {
 
   return (
     <>
-      <div className="flex flex-col mt-[120px] ">
+      <div className="flex flex-col mt-[60px] ">
         <span className="text-[40px] font-bold lg:ml-[350px] ml-[120px] 375px:ml-[135px]">
           Stack
         </span>
