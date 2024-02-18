@@ -113,8 +113,8 @@ export const StackCard = () => {
 
   return (
     <>
-      <div className="flex flex-col mt-8 ">
-        <span className="text-[40px] font-bold lg:ml-[350px] ml-[43px] 375px:ml-[65px]">
+      <div className="flex flex-col mt-[120px] ">
+        <span className="text-[40px] font-bold lg:ml-[350px] ml-[120px] 375px:ml-[135px]">
           Stack
         </span>
         <span className="mt-4 text-[25px] text-gray-400 lg:ml-[350px] 375px:ml-[65px] ml-[43px]">
@@ -125,7 +125,7 @@ export const StackCard = () => {
         {Frontend.map((item) => (
           <div
             key={item.id}
-            className="flex rounded-lg border-t border-r border-gray-500 w-[250px] h-[64px] bg-[#1b1b1e]
+            className="flex rounded-lg border-t border-r border-gray-500 w-[250px] 375px:w-[280px] h-[64px] bg-[#1b1b1e]
               cursor-pointer"
           >
             <div
@@ -149,7 +149,7 @@ export const StackCard = () => {
         {Backend.map((item) => (
           <div
             key={item.id}
-            className="flex rounded-lg border-t border-r border-gray-500 w-[250px] h-[60px] bg-[#1b1b1e] cursor-pointer"
+            className="flex rounded-lg border-t border-r border-gray-500 w-[250px] 375px:w-[280px] h-[60px] bg-[#1b1b1e] cursor-pointer"
           >
             <div
               className="m-4 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"
@@ -172,7 +172,7 @@ export const StackCard = () => {
         {Database.map((item) => (
           <div
             key={item.id}
-            className="flex rounded-lg border-t border-r border-gray-500 w-[250px] h-[60px] bg-[#1b1b1e] cursor-pointer"
+            className="flex rounded-lg border-t border-r border-gray-500 w-[250px]  375px:w-[280px] h-[60px] bg-[#1b1b1e] cursor-pointer"
           >
             <div
               className="m-4 w-[40px] h-[40px] bg-cover bg-no-repeat bg-center"

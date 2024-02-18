@@ -9,14 +9,13 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="lg:h-[250vh] h-[250vh]">
+    <div className="lg:h-[250vh] h-[320vh]">
       {/* <Nav /> */}
 
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/stack" element={<StackCard />} />
-          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/about" element={<Timeline />} />
         </Routes>
       </BrowserRouter>
 
