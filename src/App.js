@@ -10,7 +10,7 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <div className="lg:h-[250vh] h-[320vh]">
-      {/* <Nav /> */}
+      {<Nav /> }
 
       <BrowserRouter>
         <Routes>
