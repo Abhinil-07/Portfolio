@@ -14,7 +14,8 @@ function App() {
 
   return (
     <div className="lg:h-[250vh] h-[320vh]">
-      {/* {isLargeScreen ? <Nav /> : <Header />} */}
+      {<Nav />}
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Hero />} />
