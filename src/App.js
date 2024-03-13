@@ -8,13 +8,14 @@ import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 
 import Header from "./components/NavMD";
+import Navigation from "./Pages/Navbar";
 
 function App() {
   const isLargeScreen = useMediaQuery({ minWidth: 1024 });
 
   return (
     <div className="lg:h-[250vh] h-[320vh]">
-      {/* {<Nav />} */}
+      <Navigation />
 
       <BrowserRouter>
         <Routes>
